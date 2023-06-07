@@ -10,7 +10,9 @@ public class FindNumberswithEvenNumberofDigits {
         int number = 0;
         for (int i = 0; i < nums.length; i++) {
             number = (int) (Math.log10(nums[i]) + 1);
-            System.out.println(number);
+            if(number % 2 == 0){
+                counter++;
+            }
         }
         return counter;
     }
