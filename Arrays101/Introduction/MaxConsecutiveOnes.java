@@ -1,8 +1,5 @@
-package Arrays101.Introduction;
+package Introduction;
 
-/**
- * MaxConsecutiveOnes
- */
 public class MaxConsecutiveOnes {
 
     public static void main(String[] args) {

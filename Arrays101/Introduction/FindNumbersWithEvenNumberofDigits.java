@@ -1,4 +1,4 @@
-package Arrays101.Introduction;
+package Introduction;
 
 public class FindNumbersWithEvenNumberofDigits {
     public static void main(String[] args) {

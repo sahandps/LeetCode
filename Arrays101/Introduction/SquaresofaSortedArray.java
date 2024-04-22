@@ -1,4 +1,4 @@
-package Arrays101.Introduction;
+package Introduction;
 
 import java.util.Arrays;
 
