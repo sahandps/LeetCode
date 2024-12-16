@@ -11,3 +11,6 @@ def removeDuplicates(nums):
         j += 1 
     return i + 1       
 removeDuplicates(nums)
+
+
+

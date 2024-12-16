@@ -3,21 +3,26 @@ def validMountainArray(arr):
         return False
     
 
+
     i = 0
-    while arr[i] < arr[i + 1]:
-        for x in range(len(arr)):
-            if arr[x]  < arr[x + 1]:
-                i = i + 1
-            else:
-                break
-
-        for x in range(i , len(arr)):
-            if arr[x]  > arr[x + 1]:
-                i = i + 1
-            else:
-                break
-
-        if i == len(arr):
-            return True
+    while i < len(arr) -1 and arr[i] < arr[i + 1]:
+        if arr[i]  < arr[i + 1]:
+            i = i + 1
         else:
-            return False    
+            break
+ 
+    
+    if i == 0 or i == len(arr) - 1:
+        return False
+
+    else:
+        while i < len(arr) - 1 and arr[i] > arr[i + 1]:
+            if arr[i]  > arr[i + 1]:
+                i = i + 1
+            else:
+                break
+
+    if i == len(arr) - 1:
+        return True
+    else:
+        return False        

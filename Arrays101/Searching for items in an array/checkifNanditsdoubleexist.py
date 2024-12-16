@@ -1,8 +1,11 @@
 def checkIfExist(arr):
+    resu = False
     for i in range(len(arr)):
-        for j in range(1, len(arr)):
-            if arr[i] == arr[j] *2 :
-                return True
+        for j in range(len(arr)):
+            if i != j and arr[i] == 2 * arr[j]:
+                resu = True
+                    
+    return resu       
 
         
 
